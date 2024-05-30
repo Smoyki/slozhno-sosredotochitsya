@@ -436,13 +436,13 @@
 
 /* Footer */
 
-/*.footer {
+.footer {
   padding: 282px 20px;
   position: relative;
   text-align: center;
 }
 
-.footer__title {
+/*.footer__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   color: var(--title-color);
@@ -475,7 +475,6 @@
 }
  */
 
- 
  .gallery {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -494,7 +493,7 @@
   max-height: 441px;
 }
 
-.tape-img {  
+.tape-img {
   grid-row: 2/4;
   max-height: 568px;
 }
@@ -507,4 +506,64 @@
   grid-row: 3/4;
   grid-column: -3/-1;
   max-height: 318px;
+}
+
+}
+
+@media (width >= 1024px) {
+.header__theme-menu {
+  align-self: flex-start;
+  padding-block-start: 0;
+  grid-column: 2/3;
+  justify-self: center;
+  padding-left: 20px;
+}
+
+.header__theme-menu-list {
+  flex-direction: row;
+}
+
+.header__text {
+  margin-block-start: 45px;
+}
+
+.main {
+  margin-block-start: 60px;
+  margin-block-end: 66px;
+}
+.main__content {
+  width: 67.5%;
+}
+
+.main__section:nth-child(2) .main__content {
+  flex-direction: row;
+}
+
+.section-what__articles-item {
+  width: 33.333%;
+}
+
+.gallery {
+  max-height: 1040px;
+}
+
+.sunset-img {
+  max-height: 259px;
+}
+
+.ice-cream-img {
+  max-height: 595px;
+}
+
+.tape-img {
+  max-height: 768px;
+}
+
+.books-img {
+  max-height: 315px;
+}
+
+.street-img {
+  max-height: 429px;
+}
 }

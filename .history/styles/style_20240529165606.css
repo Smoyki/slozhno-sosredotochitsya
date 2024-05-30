@@ -436,13 +436,13 @@
 
 /* Footer */
 
-/*.footer {
+.footer {
   padding: 282px 20px;
   position: relative;
   text-align: center;
 }
 
-.footer__title {
+/*.footer__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   color: var(--title-color);
@@ -474,37 +474,3 @@
   }
 }
  */
-
- 
- .gallery {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  max-height: 780px;
-  gap: 20px;
-}
-
-.sunset-img {
-  grid-column: 1/3;
-  max-height: 192px;
-}
-
-.ice-cream-img {
-  grid-column: 3/4;
-  grid-row: -4/-2;
-  max-height: 441px;
-}
-
-.tape-img {  
-  grid-row: 2/4;
-  max-height: 568px;
-}
-
-.books-img {
-  max-height: 230px;
-}
-
-.street-img {
-  grid-row: 3/4;
-  grid-column: -3/-1;
-  max-height: 318px;
-}

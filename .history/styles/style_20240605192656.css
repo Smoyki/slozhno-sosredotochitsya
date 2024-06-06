@@ -514,6 +514,14 @@
 }
 
 
+@media (width < 768px) {
+  .section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
     text-shadow: 2px 2px 0px var(--title-decor);
@@ -524,15 +532,17 @@
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
-
-  .footer {
-    margin-top: 40px;
-    padding: 262px 10px;
-  }
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .footer {
     padding: 434px 20px;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .footer {
+    margin-top: 40px;
+    padding: 262px 10px;
   }
 }

@@ -54,7 +54,7 @@ a {
   cursor: pointer;
 }
 
-/*
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -65,7 +65,6 @@ a {
   left: 20px;
   bottom: 20px;
 }
-*/
 
 @media (width < 768px) and (width >= 375px) {
   .decorated-zone::before {
@@ -74,7 +73,7 @@ a {
   }
 }
 
-/* .decorated-zone::after { 
+.decorated-zone::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -91,7 +90,7 @@ a {
     top: 10px;
   }
 }
-  */
+
 .title-decor {
   background: var(--title-decor);
 }

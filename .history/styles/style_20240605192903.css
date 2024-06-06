@@ -536,3 +536,10 @@
     padding: 434px 20px;
   }
 }
+
+@media (width < 768px) and (width >= 375px) {
+  .footer {
+    margin-top: 40px;
+    padding: 262px 10px;
+  }
+}

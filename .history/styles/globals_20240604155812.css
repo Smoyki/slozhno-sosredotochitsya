@@ -74,7 +74,7 @@ a {
   }
 }
 
-/* .decorated-zone::after { 
+/* .decorated-zone::after { */
   content: "";
   position: absolute;
   width: 25px;

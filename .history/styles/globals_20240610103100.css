@@ -12,7 +12,7 @@ html {
   block-size: 100%;
 }
 
-/* body { 
+body {
   font-family: var(--font-family);
   font-size: 18px;
   font-weight: 400;
@@ -20,7 +20,7 @@ html {
   max-inline-size: 1024px;
   margin: 0 auto;
   block-size: 100%;
-} */
+}
 
 h1,
 h2,

@@ -23,6 +23,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   color: var(--main-text-color);
   transition-duration: var(--transition-duration);
 }

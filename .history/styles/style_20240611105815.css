@@ -23,8 +23,6 @@
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--main-text-color);
-  transition-duration: var(--transition-duration);
 }
 
 body {
@@ -353,11 +351,10 @@ body {
   text-align: center;
   block-size: max(100vb, 668px); */
   position: relative;
-  display: flex;
-  min-height: 100vh;
-  /* align-items: center; */
-  justify-content: center;
-  padding: 250px 20px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__title {

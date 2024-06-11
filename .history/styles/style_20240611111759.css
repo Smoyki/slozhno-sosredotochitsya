@@ -23,8 +23,11 @@
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--main-text-color);
-  transition-duration: var(--transition-duration);
+  color: var(--text-color, #f1b2ce);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
 }
 
 body {

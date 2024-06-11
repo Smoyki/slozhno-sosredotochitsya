@@ -227,7 +227,7 @@ body {
   line-height: 130%;
   gap:80px;
   flex-direction: column;
-   Оригинал */
+   оригинал */
 
    display: grid;
    grid-template-rows: repeat(4, auto);

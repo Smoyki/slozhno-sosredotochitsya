@@ -100,9 +100,8 @@ body {
   height: 25px;
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
-  left: 20px; 
-  bottom: 20px; 
-  
+  left: 20px;
+  bottom: 20px;
 }
 
 .header__theme-menu {
@@ -193,7 +192,7 @@ body {
 }
 
 
-/* Перенес стили из глоабльнных */
+/* Перенес стили из глоабльнных 
 .decorated-zone::after {
   content: "";
   position: absolute;
@@ -204,6 +203,7 @@ body {
   right: 20px;
   top: 20px;
 }
+*/
 
 
 /* Main content */
@@ -235,7 +235,7 @@ body {
    margin-block-start: 0px;
    margin-block-end: 30px;
    gap: 80px;
-   margin-bottom: 5px;
+
 }
 
 
@@ -394,7 +394,7 @@ body {
   min-height: 100vh;
   /* align-items: center; */
   justify-content: center;
-  padding: 286px 20px;
+  padding: 250px 20px;
 }
 
 .footer__title {
@@ -693,7 +693,6 @@ body {
   .main__section:last-child {
     gap: 20px;
   }
-  
 }
 
 @media (width >= 1024px) {

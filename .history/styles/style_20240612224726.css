@@ -392,9 +392,15 @@ body {
   position: relative;
   display: flex;
   min-height: 100vh;
-  /* align-items: center; */
+  
   justify-content: center;
-  padding: 286px 20px;
+  padding: 250px 20px;
+
+
+  block-size: max(100vb, 668px);
+  display: flex;
+  padding: 15px;
+  justify-content: center;
 }
 
 .footer__title {

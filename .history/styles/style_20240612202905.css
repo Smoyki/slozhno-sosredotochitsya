@@ -93,6 +93,7 @@ body {
   right: 0;
 }
 
+.decorated-zone::after,
 .decorated-zone::before {   /* Перенес из глобальнных стилей */
   content: "";
   position: absolute;
@@ -100,10 +101,21 @@ body {
   height: 25px;
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
-  left: 20px; 
-  bottom: 20px; 
-  
+  left: 20px;
+  bottom: 20px;
 }
+
+/*.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--corners-color);
+  border-top: 1px solid var(--corners-color);
+  right: 20px;
+  top: 20px;
+}
+/*  */
 
 .header__theme-menu {
   /* padding-top: 14px; */
@@ -194,7 +206,7 @@ body {
 
 
 /* Перенес стили из глоабльнных */
-.decorated-zone::after {
+/* .decorated-zone::after { 
   content: "";
   position: absolute;
   width: 25px;
@@ -204,6 +216,7 @@ body {
   right: 20px;
   top: 20px;
 }
+/*  
 
 
 /* Main content */
@@ -235,7 +248,7 @@ body {
    margin-block-start: 0px;
    margin-block-end: 30px;
    gap: 80px;
-   margin-bottom: 5px;
+
 }
 
 
@@ -394,7 +407,7 @@ body {
   min-height: 100vh;
   /* align-items: center; */
   justify-content: center;
-  padding: 286px 20px;
+  padding: 250px 20px;
 }
 
 .footer__title {
@@ -656,6 +669,7 @@ body {
 /* От сюда идут новые стили */
 
 @media (768px <= width) {
+  .
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -693,7 +707,6 @@ body {
   .main__section:last-child {
     gap: 20px;
   }
-  
 }
 
 @media (width >= 1024px) {

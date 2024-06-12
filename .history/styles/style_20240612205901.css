@@ -102,7 +102,7 @@ body {
   border-bottom: 1px solid var(--corners-color);
   left: 20px; 
   bottom: 20px; 
-  
+
 }
 
 .header__theme-menu {
@@ -235,7 +235,7 @@ body {
    margin-block-start: 0px;
    margin-block-end: 30px;
    gap: 80px;
-   margin-bottom: 5px;
+
 }
 
 
@@ -394,7 +394,7 @@ body {
   min-height: 100vh;
   /* align-items: center; */
   justify-content: center;
-  padding: 286px 20px;
+  padding: 250px 20px;
 }
 
 .footer__title {
@@ -451,6 +451,15 @@ body {
   .section__title {
     width: 35%;
   }
+
+  .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+  }
+  .decorated-zone::after {
+    top: 2.5vh;
+}
+
 }
 
 @media (width < 768px) and (width >= 375px) {

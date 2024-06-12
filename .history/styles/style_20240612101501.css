@@ -555,8 +555,31 @@ body {
   /* .section:nth-of-type(2) .section__article-list {  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     justify-content: space-between;
   } 
-    _______________________________________
-}  */
+
+  .gallery {
+    max-height: 1040px;
+  }
+
+  .sunset-img {
+    max-height: 259px;
+  }
+
+  .ice-cream-img {
+    max-height: 595px;
+  }
+
+  .tape-img {
+    max-height: 768px;
+  }
+
+  .books-img {
+    max-height: 315px;
+  }
+
+  .street-img {
+    max-height: 429px;
+  }
+} 
 
 @media (width < 1024px) and (width >= 375px) {
   .section:nth-of-type(2) .section__article-list {

@@ -551,12 +551,11 @@ body {
 }
 
 
-/* @media (width >= 1024px) { 
-  /* .section:nth-of-type(2) .section__article-list {  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media (width >= 1024px) {
+  .section:nth-of-type(2) .section__article-list {
     justify-content: space-between;
-  } 
-    _______________________________________
-}  */
+  }
+}
 
 @media (width < 1024px) and (width >= 375px) {
   .section:nth-of-type(2) .section__article-list {
@@ -574,12 +573,13 @@ body {
   }
      
   /* Стили для галерии */
-
-  
+  .ice-cream-img {
+    max-height: 595px;
+  }
 }
 
 
-/* @media (width >= 768px) {           На время!!!
+@media (width >= 768px) {
   .section:last-of-type .section__image {
     -o-object-fit: cover;
     object-fit: cover;
@@ -603,8 +603,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 19px;
   }
-   До сюда
-} */
+  
+}
 
 /* Стили галерии */
 /*  
@@ -692,31 +692,5 @@ body {
 
   .main__section:last-child {
     gap: 20px;
-  }
-}
-
-@media (width >= 1024px) {
-  .gallery {
-    max-height: 1040px;
-  }
-
-  .sunset-img {
-    max-height: 259px;
-  }
-
-  .ice-cream-img {
-    max-height: 595px;
-  }
-
-  .tape-img {
-    max-height: 768px;
-  }
-
-  .books-img {
-    max-height: 315px;
-  }
-
-  .street-img {
-    max-height: 429px;
   }
 }

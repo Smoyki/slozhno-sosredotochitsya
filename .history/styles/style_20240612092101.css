@@ -353,11 +353,6 @@ body {
 }
 
 /* Добавил новый код для галерии */
-.main__section {
-  display: flex;
-  flex-direction: column;
-}
-
 .gallery {
   display: grid;
   grid-template-rows: 142px 355px 237px 355px 237px;
@@ -369,13 +364,6 @@ body {
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.title-decor {
-  background: var(--title-decor);
-  line-height: 130%;
-  font-weight: 700;
-  font-size: 18px;
 }
 
 /* Здесь конец Main */
@@ -551,12 +539,11 @@ body {
 }
 
 
-/* @media (width >= 1024px) { 
-  /* .section:nth-of-type(2) .section__article-list {  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media (width >= 1024px) {
+  .section:nth-of-type(2) .section__article-list {
     justify-content: space-between;
-  } 
-    _______________________________________
-}  */
+  }
+}
 
 @media (width < 1024px) and (width >= 375px) {
   .section:nth-of-type(2) .section__article-list {
@@ -572,14 +559,10 @@ body {
     flex: 1 0 auto;
     width: 100%;
   }
-     
-  /* Стили для галерии */
-
-  
 }
 
 
-/* @media (width >= 768px) {           На время!!!
+@media (width >= 768px) {
   .section:last-of-type .section__image {
     -o-object-fit: cover;
     object-fit: cover;
@@ -603,11 +586,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 19px;
   }
-   До сюда
-} */
+  
+}
 
 /* Стили галерии */
-/*  
+/*  */
 @media (width < 768px) {
   .section:last-of-type .section__image {
     width: 100%;
@@ -629,7 +612,7 @@ body {
   }
 
 }
-*/
+
 
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
@@ -690,33 +673,4 @@ body {
     max-height: 318px;
   }
 
-  .main__section:last-child {
-    gap: 20px;
-  }
-}
-
-@media (width >= 1024px) {
-  .gallery {
-    max-height: 1040px;
-  }
-
-  .sunset-img {
-    max-height: 259px;
-  }
-
-  .ice-cream-img {
-    max-height: 595px;
-  }
-
-  .tape-img {
-    max-height: 768px;
-  }
-
-  .books-img {
-    max-height: 315px;
-  }
-
-  .street-img {
-    max-height: 429px;
-  }
 }

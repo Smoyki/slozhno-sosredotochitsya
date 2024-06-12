@@ -352,32 +352,6 @@ body {
   margin: 0;
 }
 
-/* Добавил новый код для галерии */
-.main__section {
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery {
-  display: grid;
-  grid-template-rows: 142px 355px 237px 355px 237px;
-  gap: 10px;
-}
-
-.gallery-image-item {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.title-decor {
-  background: var(--title-decor);
-  line-height: 130%;
-  font-weight: 700;
-  font-size: 18px;
-}
-
 /* Здесь конец Main */
 
 /* Footer */
@@ -551,12 +525,11 @@ body {
 }
 
 
-/* @media (width >= 1024px) { 
-  /* .section:nth-of-type(2) .section__article-list {  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media (width >= 1024px) {
+  .section:nth-of-type(2) .section__article-list {
     justify-content: space-between;
-  } 
-    _______________________________________
-}  */
+  }
+}
 
 @media (width < 1024px) and (width >= 375px) {
   .section:nth-of-type(2) .section__article-list {
@@ -572,14 +545,10 @@ body {
     flex: 1 0 auto;
     width: 100%;
   }
-     
-  /* Стили для галерии */
-
-  
 }
 
 
-/* @media (width >= 768px) {           На время!!!
+@media (width >= 768px) {
   .section:last-of-type .section__image {
     -o-object-fit: cover;
     object-fit: cover;
@@ -603,12 +572,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 19px;
   }
-   До сюда
-} */
+  
+}
 
-/* Стили галерии */
-/*  
-@media (width < 768px) {
+@media (width <= 768px) {
   .section:last-of-type .section__image {
     width: 100%;
     height: auto;
@@ -628,8 +595,11 @@ body {
     align-self: flex-start;
   }
 
+   /* От сюда стили добавил равно */
+  
+
 }
-*/
+
 
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
@@ -654,69 +624,4 @@ body {
   }
 }
 
-/* От сюда идут новые стили */
 
-@media (768px <= width) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    max-height: 780px;
-    gap: 20px;
-  }
-
-  .sunset-img {
-    grid-column: 1/3;
-    max-height: 192px;
-  }
-
-  .ice-cream-img {
-    grid-column: 3/4;
-    grid-row: -4/-2;
-    max-height: 441px;
-  }
-
-  .tape-img {
-    grid-row: 2/4;
-    max-height: 568px;
-  }
-
-  .books-img {
-    max-height: 230px;
-  }
-
-  .street-img {
-    grid-row: 3/4;
-    grid-column: -3/-1;
-    max-height: 318px;
-  }
-
-  .main__section:last-child {
-    gap: 20px;
-  }
-}
-
-@media (width >= 1024px) {
-  .gallery {
-    max-height: 1040px;
-  }
-
-  .sunset-img {
-    max-height: 259px;
-  }
-
-  .ice-cream-img {
-    max-height: 595px;
-  }
-
-  .tape-img {
-    max-height: 768px;
-  }
-
-  .books-img {
-    max-height: 315px;
-  }
-
-  .street-img {
-    max-height: 429px;
-  }
-}

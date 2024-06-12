@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Page */
+/* Page  Настя*/
 
 .page {
   display: flex;
@@ -440,6 +440,10 @@ body {
     width: 100%;
   }
 
+  .section:nth-of-type(2) .section__article-item {
+    flex: 1 0 auto;
+    width: 100%;
+  }
 }
 
 @media (width < 1024px) and (width >= 375px) {

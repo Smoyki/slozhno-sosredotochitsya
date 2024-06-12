@@ -3,7 +3,8 @@
 /* Page */
 
 .page {
-  display: flex;
+
+  display: flex;     
   flex-direction: column;
   gap: 40px;
   min-width: 375px;
@@ -15,6 +16,7 @@
   background-attachment: fixed;
   color: var(--main-text-color);
   transition-duration: var(--transition-duration);
+  
 }
 
 body {
@@ -27,6 +29,7 @@ body {
   block-size: 100%;
 }
 
+
 /* Header */
 
 .header {
@@ -37,15 +40,22 @@ body {
   block-size: max(100vb, 668px);
 }
 
+
+
 /* Шапка */
 
+
+
+
 .header__rec {
+  
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
   top: 21px;
-  right: 49px;
+  right: 49px; 
 }
+
 
 .header__rec::after {
   content: "";
@@ -60,23 +70,27 @@ body {
   right: 0;
 }
 
-.decorated-zone::before {
+.decorated-zone::before {   /* Перенес из глобальнных стилей */
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
-  left: 20px;
-  bottom: 20px;
+  left: 20px; 
+  bottom: 20px; 
+  
 }
+
 
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
   gap: 10px;
+  /* padding-top: 20px */
 }
 
+/* Настины  Общие стили для всех кнопок*/
 .header__theme-menu-button {
   height: 26px;
   width: 70px;
@@ -124,12 +138,14 @@ body {
   gap: 76px;
 }
 
+
 .header__subtitle {
   color: var(--article-title-color);
   align-self: flex-end;
   font-weight: 700;
   width: 50%;
 }
+
 
 /* Перенес стили из глоабльнных */
 .decorated-zone::after {
@@ -143,19 +159,21 @@ body {
   top: 20px;
 }
 
+
 /* Main content */
 
 /* Здесь начало Main */
-
+  
 .main {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  padding: 20px;
-  margin-block-start: 0px;
-  margin-block-end: 30px;
-  gap: 80px;
-  margin-bottom: 5px;
+   display: grid;
+   grid-template-rows: repeat(4, auto);
+   padding: 20px;
+   margin-block-start: 0px;
+   margin-block-end: 30px;
+   gap: 80px;
+   margin-bottom: 5px;
 }
+
 
 .section {
   line-height: 130%;
@@ -171,6 +189,7 @@ body {
 .dark-title {
   color: var(--article-title-color);
 }
+
 
 .section__article-list {
   display: flex;
@@ -222,31 +241,37 @@ body {
 .section:nth-of-type(3) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .section:first-of-type .section__title,
 .section:nth-of-type(3) .section__title {
   flex: 0 0 auto;
-  width: 33%;
+  width: 33%; 
+
+
 }
+
 
 .section:first-of-type .section__article-list,
 .section:nth-of-type(3) .section__article-list {
   flex: 0 0 auto;
   width: 66%;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; 
 }
+
 
 .section:nth-of-type(2) .section__title {
   width: 30%;
 }
 
+
 .section:nth-of-type(2) .section__article-item {
   flex: 0 0 auto;
   width: 32%;
 }
+
 
 .section:last-of-type {
   display: grid;
@@ -288,10 +313,13 @@ body {
 
 /* Footer */
 
-.footer {
+
+
+.footer { 
   position: relative;
   display: flex;
   min-height: 100vh;
+  /* align-items: center; */
   justify-content: center;
   padding: 286px 20px;
 }
@@ -303,6 +331,8 @@ body {
   text-shadow: 2px 2px 0px var(--title-shadow);
 }
 
+
+
 /* За черту */
 
 @media (width < 768px) and (width >= 375px) {
@@ -313,6 +343,7 @@ body {
     top: 11px;
     right: 39px;
   }
+  
 }
 
 @media (width < 1024px) {
@@ -374,11 +405,12 @@ body {
     margin-bottom: 20px;
   }
 
-  .decorated-zone::before {
-    left: 10px;
-    bottom: 10px;
-  }
+   .decorated-zone::before {
+      left: 10px;
+      bottom: 10px;
+  } 
 }
+
 
 @media (width < 1024px) and (width >= 375px) {
   .header__title {
@@ -387,9 +419,11 @@ body {
   }
 
   .header__subtitle {
-    padding: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px
   }
 }
+
+
 
 @media (width < 425px) {
   .header__subtitle {
@@ -397,21 +431,25 @@ body {
   }
 }
 
+
+
 @media (width < 1024px) and (width >= 768px) {
   .section:first-of-type .section__title,
   .section:nth-of-type(3) .section__title {
     width: 32%;
   }
-
+  
   .section:first-of-type .section__article-list,
   .section:nth-of-type(3) .section__article-list {
     width: 65%;
   }
-
+  
   /* Дополним стилями */
   .header {
     padding: 0px 20px 0px 0px;
   }
+
+
 }
 
 @media (width < 768px) and (width >= 375px) {
@@ -445,7 +483,9 @@ body {
     flex: 1 0 auto;
     width: 100%;
   }
+     
 }
+
 
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
@@ -459,6 +499,7 @@ body {
   }
 
   .footer {
+    /* margin-top: 40px; */
     padding: 230px 10px;
   }
 }
@@ -469,7 +510,10 @@ body {
   }
 }
 
+/* От сюда идут новые стили */
+
 @media (768px <= width) {
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -506,6 +550,7 @@ body {
   .main__section:last-child {
     gap: 20px;
   }
+  
 }
 
 @media (width >= 1024px) {
@@ -532,8 +577,9 @@ body {
   .street-img {
     max-height: 429px;
   }
-
+  
   .section:nth-of-type(2) .section__article-list {
     justify-content: space-between;
   }
+
 }

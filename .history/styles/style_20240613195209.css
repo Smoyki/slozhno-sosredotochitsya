@@ -262,7 +262,7 @@
 /* код для галерии */
 .main__section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;         
 }
 
 .gallery {

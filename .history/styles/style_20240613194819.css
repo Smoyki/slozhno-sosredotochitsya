@@ -128,6 +128,9 @@
   width: 50%;
 }
 
+.title-decor {
+  background: var(--title-decor);
+}
 
 .page.theme_light .header__rec {
   display: none;
@@ -143,6 +146,7 @@
   right: 20px;
   top: 20px;
 }
+
 
 /* Main content */
 

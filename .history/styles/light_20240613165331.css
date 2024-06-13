@@ -22,4 +22,6 @@
   --rec-color: var(--background-color);
 }
 
-
+.page.theme_light .header__rec {
+  display: none;
+}

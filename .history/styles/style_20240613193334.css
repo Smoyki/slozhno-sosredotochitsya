@@ -28,6 +28,7 @@
   block-size: 100vh;
 }
 
+ul
 /* Шапка */
 
 .header__rec {
@@ -146,10 +147,6 @@
   border-top: 1px solid var(--corners-color);
   right: 20px;
   top: 20px;
-}
-
-.gallery {
-  appearance: none
 }
 
 /* Main content */
@@ -300,6 +297,7 @@
 .footer {
   position: relative;
   display: flex;
+  /* min-height: 100vh; */
   justify-content: center;
   padding: 286px 20px;
   block-size: 100vh;
@@ -311,7 +309,6 @@
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--title-shadow);
 }
-
 
 /* За черту */
 

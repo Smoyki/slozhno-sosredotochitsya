@@ -300,6 +300,7 @@
 .footer {
   position: relative;
   display: flex;
+  /* min-height: 100vh; */
   justify-content: center;
   padding: 286px 20px;
   block-size: 100vh;

@@ -12,6 +12,16 @@ html {
   block-size: 100%;
 }
 
+/* body { 
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  min-inline-size: 375px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+  block-size: 100%;
+} */
+
 h1,
 h2,
 h3,
@@ -44,12 +54,6 @@ a {
   cursor: pointer;
 }
 
-body {
-  font-family: var(--font-family);
-  font-size: 18px;
-  font-weight: 400;
-  min-inline-size: 375px;
-  max-inline-size: 1024px;
-  margin: 0 auto;
-  block-size: 100%;
+.title-decor {
+  background: var(--title-decor);
 }

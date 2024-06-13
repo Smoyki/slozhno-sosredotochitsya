@@ -37,7 +37,9 @@ body {
   block-size: max(100vb, 668px);
 }
 
-
+.header__theme-menu {
+  color: var(--menu-color, #ff0070);
+}
 /* Шапка */
 
 .header__rec {
@@ -89,16 +91,15 @@ body {
   align-items: flex-start;
   background-color: transparent;
   cursor: pointer;
-  color: var(--button-and-p-color);
 }
 
 .main__section:last-child {
   gap: 10px;
 }
-/* /* Состояние активности кнопок  */
+/* Состояние активности кнопок */
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color);
+  border: var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -111,9 +112,7 @@ body {
 
 .header__theme-menu-button_active {
   border: 1px solid;
-  cursor: default;
-  pointer-events: none;
-} 
+}
 
 /* Титул */
 .header__title {

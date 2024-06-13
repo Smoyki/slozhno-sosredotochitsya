@@ -37,7 +37,6 @@ body {
   block-size: max(100vb, 668px);
 }
 
-
 /* Шапка */
 
 .header__rec {
@@ -89,16 +88,12 @@ body {
   align-items: flex-start;
   background-color: transparent;
   cursor: pointer;
-  color: var(--button-and-p-color);
 }
 
-.main__section:last-child {
-  gap: 10px;
-}
-/* /* Состояние активности кнопок  */
+/* Состояние активности кнопок */
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color);
+  border: var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -111,9 +106,7 @@ body {
 
 .header__theme-menu-button_active {
   border: 1px solid;
-  cursor: default;
-  pointer-events: none;
-} 
+}
 
 /* Титул */
 .header__title {
@@ -373,7 +366,6 @@ body {
   .main {
     padding: 0px 10px;
     gap: 50px;
-    margin-bottom: 0px;
   }
 
   .section__title {
@@ -462,17 +454,13 @@ body {
   }
 
   .footer {
-    padding: 250px 10px;
+    padding: 230px 10px;
   }
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .footer {
-    padding: 428px 20px;
-  }
-
-  .main {
-    margin-bottom: 0px;
+    padding: 400px 20px;
   }
 }
 
@@ -513,10 +501,7 @@ body {
   .main__section:last-child {
     gap: 20px;
   }
-  
-  .header__subtitle {
-    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-  }
+
 
 }
 
@@ -549,3 +534,6 @@ body {
     justify-content: space-between;
   }
 }
+
+.header__text {
+  inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);

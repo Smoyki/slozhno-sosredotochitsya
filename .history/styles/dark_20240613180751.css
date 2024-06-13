@@ -21,4 +21,5 @@
   --title-decor: var(--title-shadow);
   --link-shadow: var(--title-shadow);
   --rec-color: var(--title-shadow);
+  --button-and-p-color: #ff0070;
 }

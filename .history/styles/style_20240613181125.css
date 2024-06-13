@@ -37,7 +37,7 @@ body {
   block-size: max(100vb, 668px);
 }
 
-
+header__theme-menu-button
 /* Шапка */
 
 .header__rec {
@@ -89,7 +89,6 @@ body {
   align-items: flex-start;
   background-color: transparent;
   cursor: pointer;
-  color: var(--button-and-p-color);
 }
 
 .main__section:last-child {
@@ -114,6 +113,27 @@ body {
   cursor: default;
   pointer-events: none;
 } 
+
+/* Еще кнопки *
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-border-color, rgba(255, 0, 112, 0.4));
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--menu-color, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--menu-color, #ff0070);
+  cursor: default;
+  pointer-events: none;
+}
+
+*/
 
 /* Титул */
 .header__title {

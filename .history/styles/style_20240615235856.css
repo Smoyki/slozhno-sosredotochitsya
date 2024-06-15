@@ -321,7 +321,7 @@
   display: flex;
   justify-content: center;
   /* padding: 286px 20px; */
-  block-size: 100vh;
+  block-size: 100vb;
   min-block-size: 668px;
   align-items: center;
 }
@@ -400,7 +400,7 @@
   .main {
     padding: 0px 10px;
     gap: 50px;
-    margin-bottom: 37px;
+    margin-bottom: 0px;
   }
 
   .section__title {
@@ -567,7 +567,7 @@
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= px) {
   .header__subtitle {
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   }

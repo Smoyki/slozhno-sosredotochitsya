@@ -3,8 +3,8 @@
 /* Page */
 
 .page {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   min-width: 375px;
   background-image: var(--background-image);
@@ -22,19 +22,13 @@
 .header {
   display: grid;
   position: relative;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  padding: 20px 20px;
   block-size: 100vh;
-  min-block-size: 668px;
-
+  min-block-size: 100vh;
+  /*  */
   justify-items: end;
-  padding: 20px 20px 0px 0px;
-
-  grid-template-areas:
-    ".  nuv ."
-    "title title title"
-    "text text text";
 }
-
 
 
 
@@ -72,12 +66,8 @@
   bottom: 20px;
 }
 
-/* Центировал кнопки */
 .header__theme-menu {
-  align-self: flex-start;
-  justify-self: center;
-  padding-left: 20px;
-  grid-area: nuv;
+  
 }
 
 
@@ -131,21 +121,23 @@
 .header__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
-  /* margin-left: -2%; */
+  margin-left: -2%;
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--title-shadow);
-  justify-self: flex-start;
-  padding-top: 15px;
-  grid-area: title;
+}
+
+.header__title-container {
+  /* padding: 238px 0 136px; */
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
 }
 
 .header__subtitle {
   color: var(--article-title-color);
   align-self: flex-start;
   font-weight: 700;
-  width: 49%;
-  margin-top: 42px;
-  grid-area: text;
+  width: 50%;
 }
 
 
@@ -172,9 +164,10 @@
   display: grid;
   grid-template-rows: repeat(4, auto);
   padding: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 30px;
   gap: 80px;
-  margin-bottom: 45px;
-  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 .section {
@@ -320,10 +313,9 @@
   position: relative;
   display: flex;
   justify-content: center;
-  /* padding: 286px 20px; */
+  padding: 286px 20px;
   block-size: 100vh;
-  min-block-size: 668px;
-  align-items: center;
+  min-block-size: 100vh;
 }
 
 .footer__title {
@@ -343,7 +335,6 @@
     top: 11px;
     right: 39px;
   }
-  .
 }
 
 @media (width < 1024px) {
@@ -362,7 +353,6 @@
 @media (width < 1024px) and (width >= 768px) {
   .header__theme-menu {
     padding-top: 190px;
-    grid-column: 3 / 4;
   }
 
   .header__title-container {
@@ -378,7 +368,6 @@
 @media (width < 768px) and (width >= 375px) {
   .header__theme-menu {
     padding-top: 75px;
-    grid-column: 3 / 4;
   }
 
   .header__title-container {
@@ -400,7 +389,7 @@
   .main {
     padding: 0px 10px;
     gap: 50px;
-    margin-bottom: 37px;
+    margin-bottom: 0px;
   }
 
   .section__title {
@@ -414,11 +403,10 @@
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 375px) {
   .header__title {
     text-shadow: 4px 4px 0px var(--title-decor);
     margin-left: 0%;
-    padding-top: 95px;                  /* !!!   Было 375 , стало 768  */
   }
 
   .header__subtitle {
@@ -490,7 +478,7 @@
 
 @media (width < 1024px) and (width >= 768px) {
   .footer {
-    margin-top: 40px;
+    padding: 435px 20px;
   }
 
   .main {
@@ -567,7 +555,7 @@
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 375px) {
   .header__subtitle {
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   }

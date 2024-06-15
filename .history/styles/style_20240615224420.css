@@ -23,7 +23,7 @@
   display: grid;
   position: relative;
   grid-template-rows: 1fr 1fr 1fr;
-  block-size: 100vh;
+  block-size: 100vb;
   min-block-size: 668px;
 
   justify-items: end;
@@ -321,7 +321,7 @@
   display: flex;
   justify-content: center;
   /* padding: 286px 20px; */
-  block-size: 100vh;
+  block-size: 100vb;
   min-block-size: 668px;
   align-items: center;
 }
@@ -343,7 +343,7 @@
     top: 11px;
     right: 39px;
   }
-  .
+  grid-column: 3 / 4;
 }
 
 @media (width < 1024px) {
@@ -362,7 +362,6 @@
 @media (width < 1024px) and (width >= 768px) {
   .header__theme-menu {
     padding-top: 190px;
-    grid-column: 3 / 4;
   }
 
   .header__title-container {
@@ -378,7 +377,6 @@
 @media (width < 768px) and (width >= 375px) {
   .header__theme-menu {
     padding-top: 75px;
-    grid-column: 3 / 4;
   }
 
   .header__title-container {
@@ -400,7 +398,7 @@
   .main {
     padding: 0px 10px;
     gap: 50px;
-    margin-bottom: 37px;
+    margin-bottom: 0px;
   }
 
   .section__title {
@@ -414,11 +412,10 @@
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 375px) {
   .header__title {
     text-shadow: 4px 4px 0px var(--title-decor);
     margin-left: 0%;
-    padding-top: 95px;                  /* !!!   Было 375 , стало 768  */
   }
 
   .header__subtitle {
@@ -490,7 +487,7 @@
 
 @media (width < 1024px) and (width >= 768px) {
   .footer {
-    margin-top: 40px;
+    padding: 435px 20px;
   }
 
   .main {
@@ -567,7 +564,7 @@
   }
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 375px) {
   .header__subtitle {
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   }

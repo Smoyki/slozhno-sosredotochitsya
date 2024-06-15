@@ -167,10 +167,6 @@
   line-height: 130%;
 }
 
-.article__title__regular {
-  font-weight: 400;
-}
-
 .section__title {
   margin-bottom: 20px;
   font-size: 18px;
@@ -201,13 +197,11 @@
 
 .section__article-title {
   font-size: 18px;
-  /* font-weight: 700; */
+  font-weight: 700;
   color: var(--article-title-color);
 }
 
-.section__article-title, .title-decor {
-  color: var(--article-title-color);
-}
+.section__article-title
 
 .section__article-title_regular {
   font-weight: 400;
@@ -294,7 +288,7 @@
 .title-decor {
   background: var(--title-decor);
   line-height: 130%;
-  /* font-weight: 700; */
+  font-weight: 700;
   font-size: 18px;
 }
 

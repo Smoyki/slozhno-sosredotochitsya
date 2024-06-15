@@ -167,9 +167,6 @@
   line-height: 130%;
 }
 
-.article__title__regular {
-  font-weight: 400;
-}
 
 .section__title {
   margin-bottom: 20px;
@@ -201,7 +198,7 @@
 
 .section__article-title {
   font-size: 18px;
-  /* font-weight: 700; */
+  font-weight: 700;
   color: var(--article-title-color);
 }
 
@@ -294,7 +291,7 @@
 .title-decor {
   background: var(--title-decor);
   line-height: 130%;
-  /* font-weight: 700; */
+  font-weight: 700;
   font-size: 18px;
 }
 

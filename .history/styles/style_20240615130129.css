@@ -167,10 +167,6 @@
   line-height: 130%;
 }
 
-.article__title__regular {
-  font-weight: 400;
-}
-
 .section__title {
   margin-bottom: 20px;
   font-size: 18px;
@@ -201,11 +197,7 @@
 
 .section__article-title {
   font-size: 18px;
-  /* font-weight: 700; */
-  color: var(--article-title-color);
-}
-
-.section__article-title, .title-decor {
+  font-weight: 700;
   color: var(--article-title-color);
 }
 
@@ -294,7 +286,7 @@
 .title-decor {
   background: var(--title-decor);
   line-height: 130%;
-  /* font-weight: 700; */
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -315,7 +307,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--title-shadow);
+  text-shadow: px 2px 0px var(--title-shadow);
 }
 
 /* За черту */
@@ -458,6 +450,11 @@
   }
 }
 
+@media (width < 1024px) and (width >= 375px) {
+  .footer__title {
+    text-shadow: 2px 2px 0px var(--title-decor);
+  }
+}
 
 @media (width < 768px) and (width >= 375px) {
   .footer__title {

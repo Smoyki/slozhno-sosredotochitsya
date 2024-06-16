@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --button-and-p-color: #ff0070;
+    
     --main-text-color: #f1b2ce;
     --title-color: #db00ff;
     --title-shadow: #ff0070;
